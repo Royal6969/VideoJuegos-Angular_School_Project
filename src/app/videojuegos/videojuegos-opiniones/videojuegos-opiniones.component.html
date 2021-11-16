@@ -1,0 +1,19 @@
+<p>videojuegos-opiniones works!</p>
+
+<div class="container" *ngIf="opiniones != null || opiniones != undefined">
+    <mat-card class="example-card" *ngFor="let opinion of opiniones">
+        
+        <mat-card-title-group>
+            <mat-card-title>{{ opinion.titulo }}</mat-card-title>
+            
+            <mat-card-subtitle>{{ opinion.nombreUser }}</mat-card-subtitle>
+            
+            <img mat-card-sm-image src="{{ opinion.photoUser }}">
+        </mat-card-title-group>
+        
+        <mat-card-content>
+        {{ opinion.descripcion }}
+        </mat-card-content>
+
+    </mat-card>
+</div>

@@ -1,0 +1,10 @@
+<p>videojuegos-imagenes works!</p>
+
+<p>
+    (Imagenes del libro con identificador: {{idVideojuego}})
+</p>
+ 
+
+<div class="container mt-3" *ngIf="videojuego != null || videojuego != undefined">
+   <img class="videojuegos-imagenes-img" src="../../../{{ videojuego.imagen }}">
+</div>

@@ -1,0 +1,6 @@
+.videojuegos-imagenes-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 250;
+}

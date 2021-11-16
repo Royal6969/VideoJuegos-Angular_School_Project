@@ -1,0 +1,46 @@
+<!-- <p>inicio works!</p> -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+        <title>Home</title>
+    </head>
+
+<div class="body">
+	<!-- ------------------------- Header Video --------------------------- -->
+
+	<div class="v-header container">
+            
+		<div class="fullscreen-video-wrap">
+	
+			<video id="miVideo" autoplay muted loop>
+				<source src="../../../assets/inicio.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="header-overlay">
+			<div class="header-content">
+				<h1>Hola Gamer</h1>
+				<p>Mi nombre es Sergio, y esto es un proyecto de Angular!
+					<br>
+					Este ejericio tiene Child Routes, modulando componentes para conseguir el Lazy Loading,<br> y para las estructuras y estilos utilicé Angular Material</p>
+				<br><br><br><br><br>
+				<a class="btn" routerLink='/videojuegos'>Vamos allá !</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- ------------------------ Header Video --------------------- -->
+
+<script>
+	miVideo = document.getElementById('miVideo');
+	miVideo.autoplay = true;
+	miVideo.loop = true;
+	miVideo.load();
+</script>

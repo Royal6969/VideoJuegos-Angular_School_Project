@@ -1,0 +1,16 @@
+.example-card {
+  max-width: 400px;
+}
+
+.container {
+margin-top: 2.5%;
+margin-left: 5%;
+}
+
+.mat-list {
+width: 33.8vw;
+}
+
+.active-link {
+color: orange;
+}

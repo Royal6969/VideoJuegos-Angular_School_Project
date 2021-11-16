@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<p>jugadores-lista works!</p>
+
+<!-- Posibilidad Carta 1 -->
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+<!-- <div class="body">
+    <div class="card">
+        <div class="imgBx">
+            <img src="../../../assets/Sergio-Diaz.jpg">
+        </div>
+
+        <div class="content">
+            <div class="details">
+                <h2>
+                    Nombre del user
+                    <br>
+                    <span>Puesto trabajo</span>
+                </h2>
+
+                <ul class="sci">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </div>
+</div> -->
+
+<!-- Posibilidad Carta 2 -->
+
+<div class="body">
+    <div class="container" *ngIf="jugadores != null || jugadores != undefined">
+
+        <div class="cards" *ngFor="let jugador of jugadores">
+            <div class="imgBx">
+                <!-- <a [routerLink]="['/jugadores', jugador.id]"> -->
+                <a [routerLink]="['jugadores', jugador.id]">
+                    <img src="{{ jugador.imagen }}">
+                </a>
+            </div>
+
+            <div class="content">
+                <div class="details">
+                    <h2>
+                        {{ jugador.nombre }}
+                        <br>
+                        <span>{{ jugador.puesto }}</span>
+                        <br>
+                        {{ jugador.descripcion }}
+                    </h2>
+
+                    <ul class="social_icons">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

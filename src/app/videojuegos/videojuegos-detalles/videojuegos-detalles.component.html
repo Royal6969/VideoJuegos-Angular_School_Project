@@ -1,0 +1,41 @@
+<p>videojuegos-detalles works!</p>
+
+<div class="container" *ngIf="videojuego != null || videojuego != undefined">
+    
+    <mat-card class="example-card">
+        <mat-card-subtitle>Compañia: {{ videojuego.creador }}</mat-card-subtitle>
+        <mat-card-subtitle>ID: {{ videojuego.id }}</mat-card-subtitle>
+        <mat-card-title>{{ videojuego.titulo }}</mat-card-title>
+        
+        <mat-card-content>
+          <p>This card has divider and indeterminate progress as footer</p>
+          <p>{{ videojuego.descripcion }}</p>
+        </mat-card-content>
+        
+        <mat-divider inset></mat-divider>
+        
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+          <button mat-button>Rank: {{ videojuego.ranking }}</button>
+        </mat-card-actions>
+
+        <mat-card-footer>
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+        
+    </mat-card>
+
+    <mat-selection-list class="mat-list" #videojuegos [multiple]="false">
+      <mat-list-option routerLinkActive="active-link" routerLink='imagenes'>
+        Imágenes
+      </mat-list-option>
+
+      <mat-list-option routerLinkActive="active-link" routerLink='opiniones'>
+        Opiniones
+      </mat-list-option>
+    </mat-selection-list>
+
+    <router-outlet></router-outlet>
+</div>
