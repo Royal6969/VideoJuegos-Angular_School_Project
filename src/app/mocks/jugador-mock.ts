@@ -5,8 +5,8 @@ export const JUGADORES: JugadorModel[] = [
         id: 0,
         nombre: "Álvaro Esmoris",
         nickname: "VaroMoris",
-        puesto: "Professional JSP Dev",
-        descripcion: "Soy compañero de Sergio en DWC",
+        puesto: "AWS Expert",
+        descripcion: "Soy compañero de Sergio en DAW",
         ranking: 1,
         imagen: "../../assets/Alvaro-Esmoris.jpg"
     },
@@ -14,7 +14,7 @@ export const JUGADORES: JugadorModel[] = [
         id: 1,
         nombre: "Sergio Díaz",
         nickname: "Royal",
-        puesto: "Expert Angular Dev",
+        puesto: "Angular Developer",
         descripcion: "Soy compañero de Álvaro en DWC",
         ranking: 2,
         imagen: "../../assets/Sergio-Diaz.jpg"
@@ -22,17 +22,17 @@ export const JUGADORES: JugadorModel[] = [
     {
         id: 2,
         nombre: "Gerard Piqué",
-        nickname: "Catalufo",
-        puesto: "Jugador del Barça FC",
-        descripcion: "Soy jugador profesional del Barcelona",
+        nickname: "@3gerardpique",
+        puesto: "Jugador del FC Barcelona",
+        descripcion: "Soy jugador del Barça e independentista",
         ranking: 3,
         imagen: "../../assets/Gerard-Pique.jpg"
     },
     {
         id: 3,
         nombre: "Jaime Sánchez",
-        nickname: "Jeimy",
-        puesto: "Repetiendo en 1º DAW",
+        nickname: "Jimy",
+        puesto: "Aprendiendo Programación",
         descripcion: "Soy compañero de Sergio en Programación",
         ranking: 4,
         imagen: "../../assets/Jaime-Sanchez.jpg"
@@ -54,5 +54,32 @@ export const JUGADORES: JugadorModel[] = [
         descripcion: "Soy profesor de Sergio en Programación",
         ranking: 6,
         imagen: "../../assets/Don-Alberto.jpg"
+    },
+    {
+        id: 6,
+        nombre: "Emilio Pulido Jiménez",
+        nickname: "Emy",
+        puesto: "Server Manager",
+        descripcion: "Soy el mejor amigo de Jeff Bezos",
+        ranking: 7,
+        imagen: "../../assets/emilio.jpg"
+    },
+    {
+        id: 7,
+        nombre: "Andrés Pérez Rovira",
+        nickname: "Andrew",
+        puesto: "Linux Engineer",
+        descripcion: "Soy compañero de Sergio en DWC",
+        ranking: 8,
+        imagen: "../../assets/andres.jpg"
+    },
+    {
+        id: 8,
+        nombre: "Alberto Borrero Gómez",
+        nickname: "Albert",
+        puesto: "Angular Debugger",
+        descripcion: "Soy compañero de Sergio en DWC",
+        ranking: 9,
+        imagen: "../../assets/alberto.jpg"
     },
 ]
